@@ -16,15 +16,7 @@ public class Item {
         return this.name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getData() {
         return this.data;
-    }
-
-    public void setPrice(String price) {
-        this.data = price;
     }
 }
