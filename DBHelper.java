@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    final static String DB_NAME = "shoppinglist.db";
-    final static String TABLE_NAME = "list";
+    final static String DB_NAME = "list.db";
+    final static String TABLE_NAME = "notes";
     final static String COLUMN_NAME = "columnName";
     final static String DATA = "data";
     final static String CREATE = "CREATE TABLE " + TABLE_NAME + "( `_id` INTEGER PRIMARY KEY AUTOINCREMENT, "
