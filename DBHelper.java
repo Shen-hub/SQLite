@@ -23,7 +23,6 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // выполняется, если базы данных нет
         db.execSQL(CREATE);
-        //db.execSQL("INSERT INTO playlist VALUES (1, 'Storm', 'U2', 300, 1998 )");
     }
 
     @Override
