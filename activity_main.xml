@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/TaskMessage"
+            android:layout_width="445dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:hint="Введите текст заметки"/>
+
+        <EditText
+            android:id="@+id/Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text|textPersonName"
+            android:hint="Дата заметки"/>
+
+        <Button
+            android:id="@+id/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AddTask"
+            android:text="Добавить заметку"
+            />
+
+        <TextView
+            android:id="@+id/TotalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="TotalCount"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ListView
+            android:id="@+id/Tasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
